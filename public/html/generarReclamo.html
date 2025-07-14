@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Reclamo</title>
+    
+    <link rel="stylesheet" href="/html/css/estilos.css">
+
+</head>
+
+
+
+<body>
+
+    <header class="titulo">
+    <h1>Reclamar es tu Derecho</h1>
+</header>
+
+  <a href="paginaPrincipal.html" class="btn-volver">Volver</a>
+
+
+    <section class="formularioReclamo">
+        <h2 style="text-align: center;">Generar Reclamo</h2>
+        <p style="text-align: center;"> Completá los datos del reclamo para informar un problema en tu ciudad.
+            Cuanta más información nos brindes, más rápido podremos dar respuesta.
+        </p>
+
+        <!-- Aquí se mostrará el formulario para que el usuario haga su reclamo -->
+        
+            <form id="formGenerarReclamo">
+
+                <div class="form-group">
+                    <label for="tipo_reclamo">Tipo de Reclamo</label>
+                    <select id="tipo_reclamo" name="tipo_reclamo" required>
+                        <option value="" disabled selected>Seleccioná un tipo de reclamo</option>
+                        <option value="iluminación">Luz</option>
+                        <option value="agua">Agua</option>
+                        <option value="bache">Bache</option>
+                        <option value="residuos">Residuos</option>
+                        <option value="ruidos">Ruidos</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion" >Descripción del Reclamo</label>
+                    <textarea id="descripcion" name="descripcion" rows="4" placeholder="Ingresá una descripción detallada del problema" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="ubicacion" >Ubicación del Reclamo</label>
+                    <input type="text" id="ubicacion" name="ubicacion" placeholder="Ingresá la ubicación del problema (barrio, calle, número, etc.)" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="adjuntos" >Adjuntar Archivos (opcional)</label>
+                    <input type="file" id="adjuntos" name="adjuntos[]" multiple>
+                </div>
+
+                <button type="submit" class="btnCrearUsuario">Enviar Reclamo</button>
+
+            </form>
+
+    </section>
+
+    <script src="/html/js/generarReclamo.js"></script>
+
+</body>
+
+</html>

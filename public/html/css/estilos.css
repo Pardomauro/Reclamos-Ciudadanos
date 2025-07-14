@@ -1,0 +1,786 @@
+/* Página del Login */
+
+.titulo {
+    background-color: #133c79;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 0;
+    width: 100%;
+    margin: 0 0 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.btn-volver {
+    display: block;
+    width: 100px;
+    margin: 30px auto 0 auto;
+    ;
+    text-align: justify;
+    background-color: #5782c4;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+
+body {
+    background-color: #719bb8;
+    margin: 0;
+}
+
+.login-contenedor {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login-contenedor form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-contenedor h3 {
+
+    text-align: center;
+    color: #133c79;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.login-contenedor input {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-contenedor button {
+    width: 100%;
+    padding: 10px;
+    background-color: #133c79;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-contenedor button:hover {
+    background-color: #0f2a5c;
+}
+
+.login-contenedor a {
+    color: #133c79;
+    text-align: center;
+    text-decoration: solid underline;
+    margin-top: 15px;
+    display: block;
+}
+
+/* Página Principal */
+
+.titulo {
+    position: relative; /* Mantenemos la posición relativa para el menú */
+    padding: 10px 20px; /* Un padding general es suficiente */
+    text-align: center; /* Centramos el contenido de texto como el h1 */
+}
+.titulo h1{
+    margin: 0; /* Quitamos los márgenes por defecto del h1 */
+    display: inline-block; /* Hacemos que el h1 no ocupe todo el ancho innecesariamente */
+    
+}
+
+.menu-container {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-btn svg {
+    width: 24px;
+    height: 24px;
+    stroke: #333;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {
+    background-color: #ddd;
+}
+
+
+
+
+.opciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.08);
+    padding: 2rem 2.5rem;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.card:hover {
+    transform: translateY(5px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);
+}
+
+.card h2 {
+    color: #0f2a5c;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.card a,
+.card button {
+    background: #133c79;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.card a:hover,
+.card button:hover {
+    background: #0f2a5c;
+
+}
+
+/* Página crearNuevoUsuario */
+
+h1 {
+    background-color: #133c79;
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 0px;
+}
+
+p {
+
+    margin-bottom: 20px;
+    color: #1f1f1f;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.formularioNuevoUsuario {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 32px 28px;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 32px rgba(19, 60, 121, 0.10);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.formularioNuevoUsuario div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 0;
+}
+
+.formularioNuevoUsuario label {
+    text-align: center;
+    font-weight: 600;
+    color: #133c79;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+.formularioNuevoUsuario input,
+.formularioNuevoUsuario select,
+.formularioNuevoUsuario textarea {
+    padding: 12px;
+    border: 1px solid #b0c4de;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+.formularioNuevoUsuario input:focus,
+.formularioNuevoUsuario select:focus,
+.formularioNuevoUsuario textarea:focus {
+    border-color: #133c79;
+    box-shadow: 0 0 0 2px #133c7940;
+}
+
+.btnCrearUsuario {
+    display: block;
+    margin: 20px auto 0 auto;
+    /* Centra el botón y agrega espacio arriba */
+    text-align: center;
+    background-color: #133c79;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.0rem;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(19, 60, 121, 0.08);
+}
+
+.btnCrearUsuario:hover {
+
+    background-color: #0f2a5c;
+}
+
+/* Página generarReclamo */
+
+.formularioReclamo {
+    max-width: 440px;
+    margin: 40px auto;
+    padding: 32px 28px;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 32px rgba(19, 60, 121, 0.10);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.formularioReclamo h2 {
+    margin-bottom: 10px;
+    color: #133c79;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.formularioReclamo p {
+    margin-bottom: 20px;
+    color: #1f1f1f;
+    font-size: 1.1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #133c79;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #b0c4de;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #133c79;
+    box-shadow: 0 0 0 2px #133c7940;
+}
+
+.btnCrearUsuario {
+    display: block;
+    margin: 20px auto 0 auto;
+    background-color: #133c79;
+    color: #fff;
+    border: none;
+    padding: 15px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(19, 60, 121, 0.08);
+}
+
+.btnCrearUsuario:hover {
+    background-color: #0f2a5c;
+}
+
+/* Página listaReclamos */
+
+.buscador-reclamo {
+    max-width: 400px;
+    margin: 40px auto 20px auto;
+    padding: 24px 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(19, 60, 121, 0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.buscador-reclamo label {
+
+    font-weight: 800;
+    color: #133c79;
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+}
+
+.buscador-reclamo p {
+    color: #000000;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.buscador-reclamo input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #b0c4de;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-align: center;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.buscador-reclamo input[type="text"]:focus {
+    border-color: #133c79;
+    box-shadow: 0 0 0 2px #133c7940;
+}
+
+.buscador-reclamo button {
+
+    background-color: #133c79;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.0rem;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 16px;
+    /* Añadimos un espacio superior para separarlo del campo de texto */
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(19, 60, 121, 0.08);
+}
+
+.buscador-reclamo button:hover {
+    background-color: #0f2a5c;
+}
+
+.datos-reclamo {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 24px 20px;
+    background: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(19, 60, 121, 0.07);
+    display: none;
+    /* Mostrar con JS cuando haya datos */
+}
+
+.datos-reclamo h2 {
+    color: #133c79;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.datos-reclamo p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.datos-reclamo p strong {
+    color: #0f2a5c;
+}
+
+.estado-label {
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 0.9rem;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.estado-Pendiente {
+    background-color: #6c757d;
+    /* Gris */
+}
+
+.estado-En\.Proceso {
+    background-color: #007bff;
+    /* Azul */
+}
+
+.estado-Resuelto {
+    background-color: #28a745;
+    /* Verde */
+}
+
+.estado-Cancelado {
+    background-color: #dc3545;
+    /* Rojo */
+}
+
+.botones-accion {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.botones-accion button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #fff;
+}
+
+.btn-editar,
+.btn-guardar {
+    background-color: #ffc107;
+    /* Amarillo */
+    color: #212529;
+}
+
+.btn-editar:hover,
+.btn-guardar:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+.btn-cancelar,
+.btn-cancelar-edicion,
+.btn-eliminar {
+    background-color: #dc3545;
+    /* Rojo */
+}
+
+.btn-cancelar:hover,
+.btn-cancelar-edicion:hover,
+.btn-eliminar:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+.btn-cancelar-edicion {
+    background-color: #6c757d;
+    /* Gris para el cancelar de la edición */
+}
+
+.btn-cancelar-edicion:hover {
+    background-color: #5a6268;
+}
+
+.form-control {
+    width: 100%;
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Página listaReclamos - Nueva sección */
+.lista-reclamos-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 32px 28px;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 32px rgba(19, 60, 121, 0.10);
+}
+
+.lista-reclamos-container h2 {
+    text-align: center;
+    color: #133c79;
+    margin-bottom: 10px;
+}
+
+.lista-reclamos-container p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 24px;
+}
+
+/* Estilo general para las tablas de la aplicación */
+#tablaReclamos,
+#tablaPersonal_asignado {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tablaReclamos th,
+#tablaReclamos td,
+#tablaPersonal_asignado th,
+#tablaPersonal_asignado td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    /* Aumentamos el padding para dar más espacio interno */
+    text-align: left;
+    vertical-align: middle;
+    /* Alinea el contenido verticalmente al centro */
+}
+
+#tablaReclamos th,
+#tablaPersonal_asignado th {
+    background-color: #133c79;
+    color: white;
+    font-weight: 600;
+}
+
+/* Página personalAsignado */
+
+.personal-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 32px 28px;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 32px rgba(19, 60, 121, 0.10);
+}
+
+.personal-container h1 {
+    text-align: center;
+    color: #133c79;
+    margin-bottom: 24px;
+}
+
+.personal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.personal-card {
+    display: flex;
+    flex-direction: column;
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 18px 20px;
+    box-shadow: 0 2px 12px rgba(19, 60, 121, 0.07);
+}
+
+.personal-card strong {
+    color: #133c79;
+}
+
+.personal-card span {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+    .personal-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .personal-card {
+        width: 48%;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-contenido {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 300px;
+    position: relative;
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos para las etiquetas de estado de los reclamos */
+
+/* Estilo base para todas las etiquetas de estado */
+.estado-label {
+    display: inline-block;
+    /* Asegura que el fondo y el padding se apliquen bien */
+    padding: 5px 12px;
+    border-radius: 15px;
+    color: white;
+    /* El texto será blanco para todos */
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: capitalize;
+    /* Pone la primera letra en mayúscula */
+}
+
+/* Colores de fondo específicos para cada estado */
+
+.estado-pendiente {
+    background-color: #f0ad4e;
+    /* Naranja */
+}
+
+.estado-en-proceso {
+    background-color: #0275d8;
+    /* Azul */
+}
+
+.estado-resuelto {
+    background-color: #5cb85c;
+    /* Verde */
+}
+
+.estado-cancelado {
+    background-color: #d9534f;
+    /* Rojo */
+}
+
+/* Este estilo es para cuando el estado sea "N/A" */
+.estado-n-a {
+    background-color: #6c757d;
+    /* Gris */
+}
+
+/* Estilos para la foto del personal en la tabla */
+#tablaPersonal_asignado img {
+
+    width: 80px;
+    height: 100px;
+    border-radius: 0;
+    /* Para que la imagen sea redonda */
+    object-fit: cover;
+    /* Para que la imagen se ajuste bien sin deformarse */
+    border: 2px solid #e0e0e0;
+    /* Un borde sutil */
+    vertical-align: middle;
+    /* Para alinearla bien con el texto de la fila */
+
+}
+
+/* Estilos para los botones de acción dentro de las tablas */
+.acciones {
+    display: flex;
+    gap: 8px;
+    /* Espacio entre los botones */
+    align-items: center;
+
+}
+
+.acciones button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-grow: 1;
+    /* Para que los botones ocupen el mismo espacio */
+    text-align: center;
+}

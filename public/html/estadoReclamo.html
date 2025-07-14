@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Estado de Reclamo</title>
+    <link rel="stylesheet" href="/html/css/estilos.css">
+</head>
+<body>
+    <header class="titulo">
+        <h1>Consultar Estado de Reclamo</h1>
+    </header>
+
+    <a href="paginaPrincipal.html" class="btn-volver">Volver</a>
+
+    <section class="buscador-reclamo">
+        <p>Ingresá el código de reclamo para ver sus detalles y estado actual.</p>
+        <form id="formBuscarReclamo">
+            <input type="text" id="codigoReclamo" name="codigoReclamo" placeholder="Ingresá el código de reclamo" required>
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <section class="datos-reclamo" id="resultadoReclamo" style="display:none;">
+        <h2>Datos del Reclamo</h2>
+
+        <!-- Vista de solo lectura -->
+        <div id="view-mode">
+            <p><strong>Código:</strong> <span id="datoCodigo"></span></p>
+            <p><strong>Tipo:</strong> <span id="datoTipo"></span></p>
+            <p><strong>Descripción:</strong> <span id="datoDescripcion"></span></p>
+            <p><strong>Ubicación:</strong> <span id="datoUbicacion"></span></p>
+            <p><strong>Fecha:</strong> <span id="datoFecha"></span></p>
+            <p><strong>Estado:</strong> <span id="datoEstado" class="estado-label"></span></p>
+        </div>
+
+        <!-- Formulario de edición (oculto por defecto) -->
+        <form id="edit-mode" style="display: none;">
+            <div class="form-group">
+                <label for="editTipoReclamo">Tipo de Reclamo</label>
+                <select id="editTipoReclamo" name="tipo_reclamo" class="form-control">
+                    <option value="iluminación">Iluminación</option>
+                    <option value="agua">Agua</option>
+                    <option value="bache">Bache</option>
+                    <option value="residuos">Residuos</option>
+                    <option value="ruidos">Ruidos</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="editDescripcion">Descripción</label>
+                <textarea id="editDescripcion" name="descripcion" rows="4" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="editUbicacion">Ubicación</label>
+                <input type="text" id="editUbicacion" name="ubicacion" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="editEstado">Estado</label>
+                <select id="editEstado" name="estado" class="form-control">
+                    <option value="pendiente">Pendiente</option>
+                    <option value="en proceso">En Proceso</option>
+                    <option value="resuelto">Resuelto</option>
+                    <option value="cancelado">Cancelado</option>
+                </select>
+            </div>
+            <div class="botones-accion">
+                <button type="submit" class="btn-guardar">Guardar Cambios</button>
+                <button type="button" id="btn-cancelar-edicion" class="btn-cancelar-edicion">Cancelar</button>
+            </div>
+        </form>
+
+        <div class="botones-accion" id="botones-principales">
+            <button id="btn-editar" class="btn-editar">Editar</button>
+            <button id="btn-cancelar-reclamo" class="btn-cancelar">Cancelar Reclamo</button>
+        </div>
+    </section>
+
+    <p id="mensaje-error" style="display: none; color: red; text-align: center; margin-top: 20px;"></p>
+
+    <script src="/html/js/estadoReclamo.js"></script>
+</body>
+</html>

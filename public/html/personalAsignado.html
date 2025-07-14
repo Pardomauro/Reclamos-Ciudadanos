@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Personal Asignado</title>
+    <link rel="stylesheet" href="/html/css/estilos.css">
+</head>
+
+<body>
+
+    <header class="titulo">
+        <h1>Gestionar Personal Asignado</h1>
+    </header>
+
+    <a href="paginaPrincipal.html" class="btn-volver">Volver</a>
+
+    <!-- Formulario para Agregar y Editar Personal -->
+    <section class="formularioReclamo">
+        <h2 id="form-titulo">Agregar Nuevo Personal</h2>
+        <form id="formPersonal_asignado" enctype="multipart/form-data">
+            <!-- Campo oculto para el ID en modo edición -->
+            <input type="hidden" id="id_personal" name="id_personal">
+
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="sector_a_cargo">Sector a Cargo</label>
+                <select id="sector_a_cargo" name="sector_a_cargo" required>
+                    <option value="" disabled selected>Seleccioná un sector</option>
+                    <option value="Agua">Agua</option>
+                    <option value="Luz">Luz</option>
+                    <option value="Bacheo">Bacheo</option>
+                    <option value="Residuos">Residuos</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="foto">Foto</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+            <button type="submit" class="btnCrearUsuario">Agregar</button>
+        </form>
+    </section>
+
+    <!-- Tabla para listar el personal existente -->
+    <section class="lista-reclamos-container">
+        <h2>Personal Existente</h2>
+        <table id="tablaPersonal_asignado">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Sector</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas del personal se cargarán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="/html/js/personalAsignado.js"></script>
+
+</body>
+
+</html>

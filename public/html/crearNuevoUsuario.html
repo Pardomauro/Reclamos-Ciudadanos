@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Usuario</title>
+
+    <link rel="stylesheet" href="/html/css/estilos.css">
+    
+
+</head>
+<body>
+    <header>
+    <h1>Completá el formulario para registrarte en el sistema</h1>
+    </header>
+
+        <a href="login.html" class="btn-volver">Volver</a>
+ 
+    <section class="formularioNuevoUsuario">
+        <p>Registrate para comenzar a usar el sistema de reclamos ciudadanos</p>
+        
+            <form id="formNuevoUsuario">
+                <div class="mb-3">
+                    <label for="dni" class="form-label">DNI</label>
+                    <input type="text" class="form-control" id="DNI" name="DNI" placeholder="Ingresá tu DNI" required>
+                </div>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="Nombre_completo" name="Nombre_completo" placeholder="Ingresá tu nombre completo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Ingresá tu correo electrónico" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="Telefono" name="Telefono" placeholder="Ingresá tu número de teléfono" required>
+                </div>
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="Direccion" name="Direccion" placeholder="Ingresá tu direccion" required>
+                </div>
+                <button type="submit" class="btnCrearUsuario">Crear Usuario</button>
+            </form>
+    
+    <script src="/html/js/crearNuevoUsuario.js"></script>
+    
+</body>
+</html>
